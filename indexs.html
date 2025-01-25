@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Description Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        /* Add background color to the whole page */
+        body {
+            background-color: #78a8d8; /* Light grey background for the page */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main content background */
+        .container {
+            background-color: #ebb668ce; /* White background for the main content */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(31, 30, 30, 0.788); /* Light shadow for better visibility */
+            padding: 30px;
+        }
+
+        /* Add background image to the entire page */
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsYhsrxl3ozMrm3K-fbwQYocAcgCbXAU4T4g&s'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        /* Footer background */
+        footer {
+            background-color: #87acd1; /* Dark background for footer */
+            color: rgb(22, 21, 21);
+            padding: 20px 0;
+        }
+
+        /* Custom styling for footer icons */
+        footer .fa {
+            color: #e47baf;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            transition: color 0.3s;
+        }
+
+        footer .fa:hover {
+            color: #86a9cf; /* Change color when hovering over icons */
+        }
+
+        /* Styling for product name and price */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: #bebc2e;
+        }
+
+        .text-muted {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">SHOP IPHONE OWNER SOHAG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <!-- <li class="nav-item"> -->
+                        <!-- <a class="nav-link" href="#">Product</a> -->
+                    <!-- </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          products
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">iPhone 16</a></li>
+                          <li><a class="dropdown-item" href="#">iPhone 16 pro</a></li>
+                          <li><a class="dropdown-item" href="#">iPhone 16 pro max</a></li>
+                          
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">samsung 24 ultra</a></li>
+                        </ul>
+                      </li>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Card</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Product Image Carousel -->
+            <div class="col-md-6">
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.bdprice.com.bd/wp-content/uploads/2021/09/Apple-iPhone-13-Pink-Price-in-Bangladesh.jpg" class="d-block w-100" alt="Product Image 2"> 
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.bdprice.com.bd/wp-content/uploads/2020/11/Apple-iPhone-13-Blue-Price-in-Bangladesh.jpg" class="d-block w-100" alt="Product Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.bdprice.com.bd/wp-content/uploads/2021/09/Apple-iPhone-13-Black-Price-in-Bangladesh.jpg" class="d-block w-100" alt="Product Image 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="col-md-6">
+                <h1>IPHONE</h1>
+                <p class="text-muted">Amazing tagline for the product</p>
+                <h3 class="text-primary">$500.99-$1200</h3>
+                <ul>
+                    <li>1. Setting Up Your iPhone</li>
+                    <li>2. Home Screen and Apps</li>
+                    <li>3. Making Calls and Texts</li>
+                    <li>4. Camera Features</li>
+                    <li><B>SOHAG</B></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Accordion Section -->
+        <div class="accordion mt-5" id="productAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#description" aria-expanded="true" aria-controls="description">
+                        Product Description
+                    </button>
+                </h2>
+                <div id="description" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#productAccordion">
+                    <div class="accordion-body">
+                        The iPhone is a line of smartphones designed and developed by Apple. Known for its sleek design, intuitive user interface, and seamless integration with the Apple ecosystem, it combines powerful hardware with the iOS operating system.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion mt-5" id="productAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#description" aria-expanded="true" aria-controls="description">
+                            Uses this methods
+                        </button>
+                    </h2>
+                    <div id="description" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#productAccordion">
+                        <div class="accordion-body">
+                            <li>HTML</li>
+                            <li>JS</li>
+                            <li>CSS</li>
+                            <li>BOOTSTRAP</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion mt-5" id="productAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#specifications" aria-expanded="false" aria-controls="specifications">
+                        Technical Specifications
+                    </button>
+                </h2>
+                <div id="specifications" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#productAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Display: 6.1”/6.7” Super Retina XDR OLED</li>
+                            <li>Chip: A16 Bionic</li>
+                            <li>Storage: 128GB, 256GB, 512GB</li>
+                            <li>Camera: 48MP (Main), 12MP Ultra-wide</li>
+                            <li>Front Camera: 12MP TrueDepth</li>
+                            
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h5>Follow me</h5>
+                    <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+
+                <div class="col-lg-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled ms-auto">
+                        <li><a href="#" class="text-dark">Privacy Policy </a></li>
+                        <li><a href="#" class="text-dark">Terms of Service 2025</a></li>
+                        <li><a href="#" class="text-dark">made by sohag</a></li>
+                    
+                       
+        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
